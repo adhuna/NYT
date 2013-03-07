@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>The New York Times Gestural Concept</title>
+    <link href="_css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+  
+  	<div id="logo">
+  		<embed src="_images/logo.svg">
+  	</div>
+   	  	
+  	<div id="topic" class="active">	
+  		
+  		<div id="navigation">
+  				  		
+  		</div>
+  		  		
+  		<img id="article-preview-arrow-left" class="article-preview-arrow" alt="next article" src="_images/arrow-left.png" />
+  		<img id="article-preview-arrow-right" class="article-preview-arrow" alt="previous article" src="_images/arrow-right.png" />
+  		<img id="article-preview-arrow-up" class="article-preview-arrow" alt="new topic" src="_images/arrow-up.png" />
+  		<img id="article-preview-arrow-down" class="article-preview-arrow" alt="new topic" src="_images/arrow-down.png" />
+  		  		
+  		<div class="article-preview">
+  			<img src="_images/article-preview-image.png" />
+  			<div class="article-preview-description">
+  				<p>Renewed Push for Afghans to Make Peace With Taliban</p>
+  			</div>
+  			<div class="article-preview-time">
+  				<p>41 MINUTES AGO</p>
+  			</div>	
+  		</div>
+  		
+  		<div id="share-options-container">
+  			<h2>HOW WOULD YOU LIKE TO SHARE?</h2>
+ 	 		<div id="share-options-text" class="share-options">
+ 	 			<embed src="_images/text.svg">
+ 	 		</div>
+ 	 		<div id="share-options-email" class="share-options">
+ 	 			<embed src="_images/email.svg">
+ 	 		</div>
+  		</div>
+  		
+  		<div id="share-text-container" class="share-container">
+  			<img id="share-text-bubble" class="share-bubble text-bubble" src="_images/text-bubble.png" />
+	  		<img id="share-text-sent-bubble" class="share-bubble" src="_images/sent-bubble.png" />
+	  		<img id="share-text-error-bubble" class="share-bubble" src="_images/error-bubble.png" />
+	  		
+  			<input id="share-text-input" class="share-input" type="tel" name="text" value="123 456 7890" onfocus="if (this.value == '123 456 7890') {this.value = '';}" onblur="if (this.value == '') {this.value = '123 456 7890';}">
+	  		<p id="share-text-send-caption" class="share-send-caption">SEND</p>
+  			<div id="share-text-circle" class="share-circle send-circle">
+  				<embed src="_images/share-arrow-down.svg">	
+  			</div>
+  			<p id="share-text-cancel-caption" class="share-cancel-caption">CANCEL</p>
+	  		<div id="cancel-text-circle" class="share-circle cancel-circle">
+	  			<embed class="share-arrow" src="_images/share-arrow-left.svg">	
+	  		</div>
+  		</div>
+  		
+  		<div id="share-email-container" class="share-container">
+  			<img id="share-email-bubble" class="share-bubble" src="_images/email-bubble.png">
+	  		<img id="share-email-sent-bubble" class="share-bubble" src="_images/sent-bubble.png">
+	  		<img id="share-email-error-bubble" class="share-bubble" src="_images/error-bubble.png" />
+	  		
+  			<input id="share-email-input" class="share-input" type="text" name="email" value="Enter an email address" onfocus="if (this.value == 'Enter an email address') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Enter an email address';}">
+  			  		
+	  		<p id="share-email-send-caption" class="share-send-caption">SEND</p>
+  			<div id="share-email-circle" class="share-circle send-circle">
+  				<embed src="_images/share-arrow-down.svg">	
+  			</div>
+  			<p id="share-email-cancel-caption" class="share-cancel-caption">CANCEL</p>
+	  		<div id="cancel-email-circle" class="share-circle cancel-circle">
+	  			<embed src="_images/share-arrow-right.svg">	
+	  		</div>
+  		</div>
+
+  	</div> <!-- END TOPIC -->
+  		  	
+    <div id="article">
+  		<div id="article-container">
+  			<h1></h1>
+  			<p></p>
+  		</div>
+  	</div> <!-- END ARTICLE -->
+  	
+  	<div id="article-nav">
+		<div id="article-nav-mini">
+			<h1></h1>
+			<p></p>
+		</div>
+		<div id="article-nav-box"></div>
+	</div> <!-- END ARTICLE NAV -->
+	  	
+  	<!-- JAVASCRIPT -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="_js/scraper.js"></script>
+    <script src="_js/data.json"></script>
+    <script src="_js/setup.js"></script>
+    <script src="_js/home.js"></script>
+    <script src="_js/topic.js"></script>
+    <script src="_js/article.js"></script>    
+    <script src="_js/gestures.js"></script>
+    <script src="_js/leapnav.js"></script>
+    
+  </body>
+</html>
